@@ -136,7 +136,7 @@ hr.small {
 }
 .intro-header {
   /*background-color: #777777;*/
-  background-image: url('app/img/will.jpg');
+  background-image: url('../app/img/will.jpg');
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;

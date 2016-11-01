@@ -8,6 +8,8 @@ const conf = require('../conf/gulp.conf');
 
 gulp.task('inject', inject);
 
+gulp.task('copyfonts',copyfonts);
+
 function inject() {
   const injectStyles = gulp.src(conf.path.src('**/*.css'), {read: false});
   const injectScripts = gulp.src([
@@ -28,3 +30,8 @@ function inject() {
     .pipe(gulp.dest(conf.paths.tmp))
     .pipe(browserSync.stream());
 }
+
+function copyfonts() {
+  return gulp.src('./bower_components/font-awesome/fonts/**/*.{ttf,woff,woff2}')
+      .pipe(gulp.dest('./dist/fonts'));
+};
