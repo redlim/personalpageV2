@@ -1,3 +1,8 @@
-<main class="main">
-    <h1>Aquí irá el blog</h1>
-</main>
+<section>
+    <div class="container will-container">
+        <article ng-repeat="post in $ctrl.posts">
+            <h1>{{post.title}}</h1>
+            <p>{{post.content}}</p>
+        </article>
+    </div>
+</section>

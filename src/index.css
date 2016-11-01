@@ -66,7 +66,8 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
+    background-color: #333;
+    opacity: 0.6;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
@@ -134,8 +135,8 @@ hr.small {
   }
 }
 .intro-header {
-  background-color: #777777;
-  background: no-repeat center center;
+  /*background-color: #777777;*/
+  background-image: url('app/img/will.jpg');
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -545,3 +546,6 @@ body {
   filter: grayscale(100%) blur(3px);
 }
 
+.will-container{
+  margin-top: 60px;
+}

@@ -7,7 +7,7 @@ angular
 
 /** @ngInject */
 function wiContactController($scope,$firebaseArray) {
-    var ref = firebase.database().ref().child("data");
+    var ref = firebase.database().ref().child("messages");
     // create a synchronized array
     $scope.messages = $firebaseArray(ref);
     // add new items to the array
