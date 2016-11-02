@@ -10,6 +10,8 @@ gulp.task('inject', inject);
 
 gulp.task('copyfonts',copyfonts);
 
+gulp.task('copyWillImage',copyWillImage);
+
 function inject() {
   const injectStyles = gulp.src(conf.path.src('**/*.css'), {read: false});
   const injectScripts = gulp.src([
@@ -34,4 +36,9 @@ function inject() {
 function copyfonts() {
   return gulp.src('./bower_components/font-awesome/fonts/**/*.{ttf,woff,woff2}')
       .pipe(gulp.dest('./dist/fonts'));
+};
+
+function copyWillImage() {
+  return gulp.src('./src/app/img/will.jpg')
+      .pipe(gulp.dest('./dist/styles/app/img/'));
 };
