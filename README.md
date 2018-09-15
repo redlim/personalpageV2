@@ -1,2 +1,3 @@
 # Web Personal  
-Web personal de [Wilder Olmos](https://wilderolmos.com/)
+Antigua Web personal de [Wilder Olmos](https://redlim.github.io/personalpageV2/) 
+
